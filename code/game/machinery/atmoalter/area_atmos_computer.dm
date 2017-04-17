@@ -106,7 +106,7 @@
 	else if(href_list["toggle"])
 		var/obj/machinery/portable_atmospherics/powered/scrubber/huge/scrubber = locate(href_list["scrub"])
 
-		if(validscrubber(scrubber))
+		if(!validscrubber(scrubber))
 			spawn(20)
 				status = "ERROR: Couldn't connect to scrubber! (timeout)"
 				connectedscrubbers -= scrubber
