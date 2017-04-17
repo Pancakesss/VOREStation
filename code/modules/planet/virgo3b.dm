@@ -1,14 +1,14 @@
 var/datum/planet/virgo3b/planet_virgo3b = null
 
 /datum/time/virgo3b
-	seconds_in_day = 60 * 60 * 32 * 10 // 115,200 seconds.  If we did 32.64 hours/day it would be around 117,504 seconds instead.
+	seconds_in_day = 3 HOURS
 
 /datum/planet/virgo3b
 	name = "Virgo3b"
 	desc = "A mid-sized moon of the Virgo 3 gas giant, this planet has an atmosphere mainly comprised of phoron, with trace \
 	amounts of both oxygen and nitrogen. Fortunately, the oxygen is not enough to be combustible in any meaningful way, however \
 	the phoron is desirable by many corporations, including Nanotrasen."
-	current_time = new /datum/time/virgo3b() // 32 hour clocks are nice.
+	current_time = new /datum/time/virgo3b()
 	expected_z_levels = list(1,2,3) // To be changed when real map is finished.
 
 /datum/planet/virgo3b/New()
