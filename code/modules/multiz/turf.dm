@@ -73,6 +73,7 @@
 */
 /turf/simulated/open/update_icon()
 	overlays.Cut()
+	update_icon_edge() //VOREStation Edit - Grab grass edges or whatever.
 	var/turf/below = GetBelow(src)
 	if(below)
 		icon = below.icon

@@ -1,23 +1,3 @@
-//Simulated
-VIRGO3B_TURF_CREATE(/turf/simulated/open)
-/turf/simulated/open/virgo3b/edge_blending_priority = 1 //Turfs which also have e_b_p and higher than this will plop decorative edges onto this turf
-
-/turf/simulated/open/virgo3b/New()
-	. = ..()
-	outdoor_turfs.Add(src)
-	return .
-
-VIRGO3B_TURF_CREATE(/turf/simulated/floor/outdoors/grass/sif)
-/turf/simulated/floor/outdoors/grass/sif/virgo3b/edge_blending_priority = 5
-
-VIRGO3B_TURF_CREATE(/turf/simulated/floor/outdoors/rocks)
-VIRGO3B_TURF_CREATE(/turf/simulated/floor/reinforced)
-VIRGO3B_TURF_CREATE(/turf/simulated/floor/tiled/steel_dirty)
-
-//Unsimulated
-VIRGO3B_TURF_CREATE_UN(/turf/unsimulated/wall/planetary/sif)
-/turf/unsimulated/wall/planetary/sif/name = "facility wall"
-
 //Special map objects
 /obj/effect/landmark/map_data/virgo3b
     height = 7
